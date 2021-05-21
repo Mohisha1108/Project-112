@@ -1,0 +1,235 @@
+<html>
+    <head>
+        <title>MobileNet</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+      </head>
+</html>
+<body>
+    <b style="color: white; text-align: center;" id="b">Case Study <img src="case-study.jpg" id="design-img"></b><br><br>
+    <center> 
+        <span>
+            <div class="result_div"><span>I have tested 10 images in which - 
+                <hr>
+                2 image results from both are same
+                <hr>
+                1 image result from both are wrong
+                <hr>
+                5 image results from Microsoft Azure are correct and are more accurate
+                <hr>
+                2 image results from MobileNet Model are correct and are more accurate
+            </span></div>
+        </span>
+    </center>
+    <div>
+        <ol class="design_css col-sm-6 col-xl-12">
+            <div class="text_images_and_result">
+                <li>
+                    <b>Test Image - </b> <br>
+                    <img src="cat.png" class="img_responsive">
+                </li>
+                <h5>Output on <b>Microsoft Azure</b>- 
+                    <span>Domestic Cat</span>
+                </h5>
+                <h5>Output on <b>MobileNet Model</b>- 
+                    <span>Tabby Cat</span>
+                </h5>
+                <div class="bob3">
+                    <b id="design">Result - </b>
+                    <hr>
+                    <h4>Both are the same thing</h4>
+                </div>
+            </div>
+            </ol>
+            <br>
+            <ol class="design_css col-sm-6 col-xl-12">
+                <div class="text_images_and_result">
+                    <li>
+                        <b>Test Image - </b> <br>
+                        <img src="towel.jpg" class="img_responsive">
+                    </li>
+                    <h5>Output on <b>Microsoft Azure</b>- 
+                        <span>Trowel</span>
+                    </h5>
+                    <h5>Output on <b>MobileNet Model</b>- 
+                        <span>Smoothing Iron</span>
+                    </h5>
+                    <div class="bob3">
+                        <b id="design">Result - </b>
+                        <hr>
+                        <h4>Microsoft Azure is more correct and accurate</h4>
+                    </div>
+                </div>
+                </ol>
+                <br>
+                <ol class="design_css col-sm-6 col-xl-12">
+                    <div class="text_images_and_result">
+                        <li>
+                            <b>Test Image - </b> <br>
+                            <img src="banana.jpg" class="img_responsive">
+                        </li>
+                        <h5>Output on <b>Microsoft Azure</b>- 
+                            <span>Banana</span>
+                        </h5>
+                        <h5>Output on <b>MobileNet Model</b>- 
+                            <span>Banana</span>
+                        </h5>
+                        <div class="bob3">
+                            <b id="design">Result - </b>
+                            <hr>
+                            <h4>Both are giving the same output</h4>
+                        </div>
+                    </div>
+                    </ol>
+                    <br><ol class="design_css col-sm-6 col-xl-12">
+                        <div class="text_images_and_result">
+                            <li>
+                                <b>Test Image - </b> <br>
+                                <img src="box.jpg" class="img_responsive">
+                            </li>
+                            <h5>Output on <b>Microsoft Azure</b>- 
+                                <span>Shoebox</span>
+                            </h5>
+                            <h5>Output on <b>MobileNet Model</b>- 
+                                <span>Envelope</span>
+                            </h5>
+                            <div class="bob3">
+                                <b id="design">Result - </b>
+                                <hr>
+                                <h4>Microsoft Azure is more accurate</h4>
+                            </div>
+                        </div>
+                        </ol>
+                        <br>
+                        <ol class="design_css col-sm-6 col-xl-12">
+                            <div class="text_images_and_result">
+                                <li>
+                                    <b>Test Image - </b> <br>
+                                    <img src="ceiling fan.jpg" class="img_responsive">
+                                </li>
+                                <h5>Output on <b>Microsoft Azure</b>- 
+                                    <span>Fan Blade</span>
+                                </h5>
+                                <h5>Output on <b>MobileNet Model</b>- 
+                                    <span>Telivision</span>
+                                </h5>
+                                <div class="bob3">
+                                    <b id="design">Result - </b>
+                                    <hr>
+                                    <h4>Microsoft Azure is more accurate </h4>
+                                </div>
+                            </div>
+                            </ol>
+                            <br>
+                            <ol class="design_css col-sm-6 col-xl-12">
+                                <div class="text_images_and_result">
+                                    <li>
+                                        <b>Test Image - </b> <br>
+                                        <img src="forest.webp" class="img_responsive">
+                                    </li>
+                                    <h5>Output on <b>Microsoft Azure</b>- 
+                                        <span>Vertebrate</span>
+                                    </h5>
+                                    <h5>Output on <b>MobileNet Model</b>- 
+                                        <span>Tree</span>
+                                    </h5>
+                                    <div class="bob3">
+                                        <b id="design">Result - </b>
+                                        <hr>
+                                        <h4>MobileNet Model is more accurate</h4>
+                                    </div>
+                                </div>
+                                </ol>
+                                <br>
+                                <ol class="design_css col-sm-6 col-xl-12">
+                                    <div class="text_images_and_result">
+                                        <li>
+                                            <b>Test Image - </b> <br>
+                                            <img src="fridge.jpg" class="img_responsive">
+                                        </li>
+                                        <h5>Output on <b>Microsoft Azure</b>- 
+                                            <span>Cellphone</span>
+                                        </h5>
+                                        <h5>Output on <b>MobileNet Model</b>- 
+                                            <span>Photo</span>
+                                        </h5>
+                                        <div class="bob3">
+                                            <b id="design">Result - </b>
+                                            <hr>
+                                            <h4>Both are giving wrong answers</h4>
+                                        </div>
+                                    </div>
+                                    </ol>
+                                    <br>
+                                    <ol class="design_css col-sm-6 col-xl-12">
+                                        <div class="text_images_and_result">
+                                            <li>
+                                                <b>Test Image - </b> <br>
+                                                <img src="pencil.jpg" class="img_responsive">
+                                            </li>
+                                            <h5>Output on <b>Microsoft Azure</b>- 
+                                                <span>Pencil</span>
+                                            </h5>
+                                            <h5>Output on <b>MobileNet Model</b>- 
+                                                <span>Pencil Sharpener</span>
+                                            </h5>
+                                            <div class="bob3">
+                                                <b id="design">Result - </b>
+                                                <hr>
+                                                <h4>Microsoft Azure is the correct one and is more accurate</h4>
+                                            </div>
+                                        </div>
+                                        </ol>
+                                        <br>
+                                        <ol class="design_css col-sm-6 col-xl-12">
+                                            <div class="text_images_and_result">
+                                                <li>
+                                                    <b>Test Image - </b> <br>
+                                                    <img src="plant.webp" class="img_responsive">
+                                                </li>
+                                                <h5>Output on <b>Microsoft Azure</b>- 
+                                                    <span>Tree</span>
+                                                </h5>
+                                                <h5>Output on <b>MobileNet Model</b>- 
+                                                    <span>Plant</span>
+                                                </h5>
+                                                <div class="bob3">
+                                                    <b id="design">Result - </b>
+                                                    <hr>
+                                                    <h4>MobileNet Model is the correct one and is more accurate</h4>
+                                                </div>
+                                            </div>
+                                            </ol>
+                                            <br>
+                                            <ol class="design_css col-sm-6 col-xl-12">
+                                                <div class="text_images_and_result">
+                                                    <li>
+                                                        <b>Test Image - </b> <br>
+                                                        <img src="water glass.jpg" class="img_responsive">
+                                                    </li>
+                                                    <h5>Output on <b>Microsoft Azure</b>- 
+                                                        <span>Liqueur glass</span>
+                                                    </h5>
+                                                    <h5>Output on <b>MobileNet Model</b>- 
+                                                        <span>Bottle</span>
+                                                    </h5>
+                                                    <div class="bob3">
+                                                        <b id="design">Result - </b>
+                                                        <hr>
+                                                        <h4>Microsoft Azure is more accurate</h4>
+                                                    </div>
+                                                </div>
+                                                </ol>
+                                            
+                                            </div>
+</body>
